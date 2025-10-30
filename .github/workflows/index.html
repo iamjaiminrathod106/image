@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Image</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f2f4f7;
+      font-family: sans-serif;
+      flex-direction: column;
+    }
+    button {
+      width: 60%;
+      background: #0078ff;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 25px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 0px 0px 40px 30px rgba(0, 120, 255, 0.3);
+      
+    }
+    #msg {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+    }
+    #doneImage {
+      display: none;
+      margin-top: 20px;
+      width: 100%;
+      height: 80%;
+      animation: pop 0.5s ease-in-out;
+    }
+    @keyframes pop {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <button id="btn">Open Image</button>
+  <div id="msg"></div>
+  <img id="doneImage" src="https://i.pinimg.com/736x/a1/d9/ca/a1d9ca7186bb87800aa09a44836974f8.jpg" alt="done">
+
+  <script src="data.js"></script>
+</body>
+</html>
